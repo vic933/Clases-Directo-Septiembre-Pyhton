@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e2f22e842082594f7ad3a7d3c6812d81 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e2f22e842082594f7ad3a7d3c6812d81" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e2f22e842082594f7ad3a7d3c6812d81 = L.map(
+                "map_e2f22e842082594f7ad3a7d3c6812d81",
+                {
+                    center: [40.4121, -3.6995200000000006],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7f1dc165775aede8efe6e6c991e2dfc9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_7f1dc165775aede8efe6e6c991e2dfc9.addTo(map_e2f22e842082594f7ad3a7d3c6812d81);
+        
+    
+            var marker_df42fc08391169dd91c47f52d3bd03e8 = L.marker(
+                [40.4153, -3.6844],
+                {}
+            ).addTo(map_e2f22e842082594f7ad3a7d3c6812d81);
+        
+    
+            var icon_f106ef6f0ea3bf379fc150d267f11efb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_df42fc08391169dd91c47f52d3bd03e8.setIcon(icon_f106ef6f0ea3bf379fc150d267f11efb);
+        
+    
+        var popup_5126e9c5e47b344488796d7cf79a2ac0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8bb44b1e96a9f4fa858f8ed58df0a15f = $(`<div id="html_8bb44b1e96a9f4fa858f8ed58df0a15f" style="width: 100.0%; height: 100.0%;"><b>Parque del Retiro</b><br>Parque más famoso de Madrid</div>`)[0];
+                popup_5126e9c5e47b344488796d7cf79a2ac0.setContent(html_8bb44b1e96a9f4fa858f8ed58df0a15f);
+            
+        
+
+        marker_df42fc08391169dd91c47f52d3bd03e8.bindPopup(popup_5126e9c5e47b344488796d7cf79a2ac0)
+        ;
+
+        
+    
+    
+            var marker_3c86308e0ecb59441d2ab59020c7002a = L.marker(
+                [40.4138, -3.6921],
+                {}
+            ).addTo(map_e2f22e842082594f7ad3a7d3c6812d81);
+        
+    
+            var icon_e0c64af8dc388fdd8d393bb95ef22da4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3c86308e0ecb59441d2ab59020c7002a.setIcon(icon_e0c64af8dc388fdd8d393bb95ef22da4);
+        
+    
+        var popup_212bb5d4e4ec5e4b87e3ca212962a6bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18c94c6fcbd7a2cc46c0754b0716dae1 = $(`<div id="html_18c94c6fcbd7a2cc46c0754b0716dae1" style="width: 100.0%; height: 100.0%;"><b>Museo del Prado</b><br>Museo nacional de arte</div>`)[0];
+                popup_212bb5d4e4ec5e4b87e3ca212962a6bf.setContent(html_18c94c6fcbd7a2cc46c0754b0716dae1);
+            
+        
+
+        marker_3c86308e0ecb59441d2ab59020c7002a.bindPopup(popup_212bb5d4e4ec5e4b87e3ca212962a6bf)
+        ;
+
+        
+    
+    
+            var marker_774a08429119d8c51eba43d6e10e2f45 = L.marker(
+                [40.4168, -3.7038],
+                {}
+            ).addTo(map_e2f22e842082594f7ad3a7d3c6812d81);
+        
+    
+            var icon_5942a9b74d2607d0cc68c670ca6166c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_774a08429119d8c51eba43d6e10e2f45.setIcon(icon_5942a9b74d2607d0cc68c670ca6166c6);
+        
+    
+        var popup_d87222b7a9fc9b69252920c74b8ebabd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c79124f052601a9408525097455ccfce = $(`<div id="html_c79124f052601a9408525097455ccfce" style="width: 100.0%; height: 100.0%;"><b>Puerta del Sol</b><br>Centro simbólico de España</div>`)[0];
+                popup_d87222b7a9fc9b69252920c74b8ebabd.setContent(html_c79124f052601a9408525097455ccfce);
+            
+        
+
+        marker_774a08429119d8c51eba43d6e10e2f45.bindPopup(popup_d87222b7a9fc9b69252920c74b8ebabd)
+        ;
+
+        
+    
+    
+            var marker_2592edf60937f5707ebd39466c211e4e = L.marker(
+                [40.424, -3.7178],
+                {}
+            ).addTo(map_e2f22e842082594f7ad3a7d3c6812d81);
+        
+    
+            var icon_a4a944966b9575232b0e60a4b135abc2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2592edf60937f5707ebd39466c211e4e.setIcon(icon_a4a944966b9575232b0e60a4b135abc2);
+        
+    
+        var popup_45648067032ff7cb49db1668db5df1d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53b8c01f87ab2c0496aaff776017e597 = $(`<div id="html_53b8c01f87ab2c0496aaff776017e597" style="width: 100.0%; height: 100.0%;"><b>Templo de Debod</b><br>Templo egipcio donado a España</div>`)[0];
+                popup_45648067032ff7cb49db1668db5df1d0.setContent(html_53b8c01f87ab2c0496aaff776017e597);
+            
+        
+
+        marker_2592edf60937f5707ebd39466c211e4e.bindPopup(popup_45648067032ff7cb49db1668db5df1d0)
+        ;
+
+        
+    
+    
+            var marker_03f4e05baa07b5adec406c93fe0e4e5e = L.marker(
+                [40.3906, -3.6995],
+                {}
+            ).addTo(map_e2f22e842082594f7ad3a7d3c6812d81);
+        
+    
+            var icon_b07e3285291e748c504bd52d6a740287 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_03f4e05baa07b5adec406c93fe0e4e5e.setIcon(icon_b07e3285291e748c504bd52d6a740287);
+        
+    
+        var popup_c8489024b033b355557c82dd78715f6a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f47aaf717abbb77d1563e494e82720a = $(`<div id="html_5f47aaf717abbb77d1563e494e82720a" style="width: 100.0%; height: 100.0%;"><b>Matadero Madrid</b><br>Centro cultural en antiguo matadero</div>`)[0];
+                popup_c8489024b033b355557c82dd78715f6a.setContent(html_5f47aaf717abbb77d1563e494e82720a);
+            
+        
+
+        marker_03f4e05baa07b5adec406c93fe0e4e5e.bindPopup(popup_c8489024b033b355557c82dd78715f6a)
+        ;
+
+        
+    
+</script>
+</html>
